@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shaikh Rehan — AI Portfolio</title>
+  <style>
+    :root{
+      --accent:#2563eb; --bg:#0f1724; --card:#0b1220; --text:#e6eef8;
+      --muted:#9fb0d6; --radius:12px;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071029 0%, #071526 100%);color:var(--text);}
+    .container{max-width:1000px;margin:28px auto;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    .hero{display:flex;gap:28px;margin-top:28px;align-items:center}
+    .hero-left{flex:1}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px;line-height:1.5}
+    .cta{margin-top:18px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted)}
+    .projects-list{display:flex;flex-direction:column;gap:12px}
+    .project-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:30px}
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:flex-start}
+      .avatar{width:72px;height:72px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">SR</div>
+        <div>
+          <div style="font-weight:800">Shaikh Rehan</div>
+          <div style="font-size:12px;color:var(--muted)">AI Student • Diploma 2nd Year</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Hi — I’m <span style="color:var(--accent)">Shaikh Rehan</span>.<br><small style="font-weight:600;color:var(--muted)">Building 25 Real-World AI Projects.</small></h1>
+        <p class="lead">I’m a Diploma student specializing in Artificial Intelligence. My goal is to build 25 functional projects before graduation — combining Python, Java, C++, HTML/CSS, and real AI systems.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a style="margin-left:10px;color:var(--muted);text-decoration:none;font-weight:700" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div style="width:320px">
+        <div class="card">
+          <strong>Quick stats</strong>
+          <div style="margin-top:10px">
+            <div style="display:flex;justify-content:space-between"><span>Projects</span><span style="font-weight:800">1 / 25</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Languages</span><span style="font-weight:800">Python, Java, C++</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Goal</span><span style="font-weight:800">30 LPA</span></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <strong>Contact</strong>
+          <div style="margin-top:8px;color:var(--muted)">email: <span style="color:var(--text)">shaikhrehan0701@gmail.com</span></div>
+          <div style="margin-top:6px;color:var(--muted)">GitHub: <a href="https://github.com/Alex16589" style="color:var(--accent);text-decoration:none;font-weight:700">Alex16589</a></div>
+          <div style="margin-top:6px;color:var(--muted)">Repositories: <a href="https://github.com/Alex16589?tab=repositories" style="color:var(--accent);text-decoration:none;font-weight:700">View all</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:26px">
+      <div style="display:flex;justify-content:space-between;align-items:end">
+        <h2 style="margin:0">Selected Projects</h2>
+        <div style="color:var(--muted);font-size:14px">Showcase: live demo + code</div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin:0">Project — Portfolio Website</h3>
+          <p style="color:var(--muted);margin-top:6px">Personal portfolio built with HTML, CSS, and JS. Hosted on GitHub Pages.</p>
+          <div style="margin-top:8px" class="skills">
+            <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">GitHub Pages</div>
+          </div>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn" href="https://alex16589.github.io" style="background:transparent;border:2px solid var(--accent);color:var(--accent)">Live</a>
+            <a class="btn" href="https://github.com/Alex16589" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0">Project — Coming Soon</h3>
+          <p style="color:var(--muted);margin-top:6px">Next up: Python Smart Calculator (Phase 1, Project #2).</p>
+          <div style="margin-top:8px" class="skills">
+            <div class="chip">Python</div><div class="chip">Tkinter</div><div class="chip">Logic</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="margin-top:20px">
+      <h2 style="margin:0">Skills</h2>
+      <div class="card" style="margin-top:10px">
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          <div style="flex:1;min-width:220px">
+            <strong>Languages</strong>
+            <div class="skills" style="margin-top:8px">
+              <div class="chip">Python</div><div class="chip">Java</div><div class="chip">C/C++</div><div class="chip">HTML/CSS</div>
+            </div>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <strong>AI & Tools</strong>
+            <div class="skills" style="margin-top:8px">
+              <div class="chip">NumPy</div><div class="chip">Pandas</div><div class="chip">Scikit-learn</div><div class="chip">OpenCV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:20px">
+      <h2 style="margin:0">Contact</h2>
+      <div class="card" style="margin-top:10px">
+        <p style="color:var(--muted);margin:0 0 10px 0">Email me at <strong style="color:var(--text)">shaikhrehan0701@gmail.com</strong></p>
+        <p style="color:var(--muted);margin:0">Links: 
+          <a href="https://github.com/Alex16589" style="color:var(--accent);text-decoration:none">GitHub</a> • 
+          <a href="#" style="color:var(--accent);text-decoration:none">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Built by Shaikh Rehan • AI Student • 2025 Portfolio Initiative
+    </footer>
+  </div>
+</body>
+</html>
