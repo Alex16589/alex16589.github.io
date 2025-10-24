@@ -5,35 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shaikh Rehan — AI Portfolio</title>
   <style>
-    :root{
+    :root {
       --accent:#2563eb; --bg:#0f1724; --card:#0b1220; --text:#e6eef8;
       --muted:#9fb0d6; --radius:12px;
       font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071029 0%, #071526 100%);color:var(--text);}
+    *{box-sizing:border-box;}
+    html,body {
+      height:100%;
+      margin:0;
+      background:linear-gradient(180deg,#071029 0%, #071526 100%);
+      color:var(--text);
+    }
     .container{max-width:1000px;margin:28px auto;padding:24px;}
     header{display:flex;align-items:center;justify-content:space-between;gap:12px;}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
-    .hero{display:flex;gap:28px;margin-top:28px;align-items:center}
-    .hero-left{flex:1}
-    h1{margin:0;font-size:28px}
-    p.lead{color:var(--muted);margin-top:8px;line-height:1.5}
-    .cta{margin-top:18px}
-    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
-    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted)}
-    .projects-list{display:flex;flex-direction:column;gap:12px}
-    .project-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
-    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:30px}
+    .brand{display:flex;align-items:center;gap:12px;}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600;}
+    .hero{display:flex;gap:28px;margin-top:28px;align-items:center;}
+    .hero-left{flex:1;}
+    h1{margin:0;font-size:28px;}
+    p.lead{color:var(--muted);margin-top:8px;line-height:1.5;}
+    .cta{margin-top:18px;}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:20px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:16px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+    .chip{background:rgba(255,255,255,0.05);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--muted);}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:30px;}
     @media(max-width:800px){
-      .grid{grid-template-columns:1fr}
-      .hero{flex-direction:column;align-items:flex-start}
-      .avatar{width:72px;height:72px}
+      .hero{flex-direction:column;align-items:flex-start;}
+      .avatar{width:72px;height:72px;}
     }
   </style>
 </head>
@@ -54,6 +56,7 @@
       </nav>
     </header>
 
+    <!-- ===================== HERO SECTION ===================== -->
     <section class="hero">
       <div class="hero-left">
         <h1>Hi — I’m <span style="color:var(--accent)">Shaikh Rehan</span>.<br><small style="font-weight:600;color:var(--muted)">Building 25 Real-World AI Projects.</small></h1>
@@ -63,11 +66,12 @@
           <a style="margin-left:10px;color:var(--muted);text-decoration:none;font-weight:700" href="#contact">Get in touch</a>
         </div>
       </div>
+
       <div style="width:320px">
         <div class="card">
           <strong>Quick stats</strong>
           <div style="margin-top:10px">
-            <div style="display:flex;justify-content:space-between"><span>Projects</span><span style="font-weight:800">1 / 25</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Projects</span><span style="font-weight:800">3 / 25</span></div>
             <div style="display:flex;justify-content:space-between"><span>Languages</span><span style="font-weight:800">Python, Java, C++</span></div>
             <div style="display:flex;justify-content:space-between"><span>Goal</span><span style="font-weight:800">30 LPA</span></div>
           </div>
@@ -82,6 +86,7 @@
       </div>
     </section>
 
+    <!-- ===================== PROJECTS SECTION ===================== -->
     <section id="projects" style="margin-top:26px">
       <div style="display:flex;justify-content:space-between;align-items:end">
         <h2 style="margin:0">Selected Projects</h2>
@@ -89,28 +94,75 @@
       </div>
 
       <div class="grid">
+
+        <!-- 💼 Project 1 -->
         <div class="card">
-          <h3 style="margin:0">Project — Portfolio Website</h3>
+          <h3 style="margin:0">Portfolio Website</h3>
           <p style="color:var(--muted);margin-top:6px">Personal portfolio built with HTML, CSS, and JS. Hosted on GitHub Pages.</p>
           <div style="margin-top:8px" class="skills">
             <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">GitHub Pages</div>
           </div>
           <div style="margin-top:10px;display:flex;gap:8px">
             <a class="btn" href="https://alex16589.github.io" style="background:transparent;border:2px solid var(--accent);color:var(--accent)">Live</a>
-            <a class="btn" href="https://github.com/Alex16589" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
+            <a class="btn" href="https://github.com/Alex16589/alex16589.github.io" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
           </div>
         </div>
 
+        <!-- 💡 Project 2 -->
         <div class="card">
-          <h3 style="margin:0">Project — Coming Soon</h3>
-          <p style="color:var(--muted);margin-top:6px">Next up: Python Smart Calculator (Phase 1, Project #2).</p>
+          <h3 style="margin:0">Smart Calculator (Python)</h3>
+          <p style="color:var(--muted);margin-top:6px">A Python-based calculator that can handle both normal and natural language input using Tkinter.</p>
           <div style="margin-top:8px" class="skills">
             <div class="chip">Python</div><div class="chip">Tkinter</div><div class="chip">Logic</div>
           </div>
+          <div style="margin-top:10px">
+            <a class="btn" href="https://github.com/Alex16589/smart-calculator" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
+          </div>
         </div>
+
+        <!-- 🎓 Project 3 -->
+        <div class="card">
+          <h3 style="margin:0">Students Tracker</h3>
+          <p style="color:var(--muted);margin-top:6px">A system to manage and track student attendance, marks, and performance using Python.</p>
+          <div style="margin-top:8px" class="skills">
+            <div class="chip">Python</div><div class="chip">Data Handling</div>
+          </div>
+          <div style="margin-top:10px">
+            <a class="btn" href="https://github.com/Alex16589/Students-Tracker" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
+          </div>
+        </div>
+
+        <!-- 🚦 Project 4 -->
+        <div class="card">
+          <h3 style="margin:0">Traffic Controller</h3>
+          <p style="color:var(--muted);margin-top:6px">A simulation of smart traffic light systems using Python and basic AI logic.</p>
+          <div style="margin-top:8px" class="skills">
+            <div class="chip">Python</div><div class="chip">Simulation</div><div class="chip">AI</div>
+          </div>
+          <div style="margin-top:10px">
+            <a class="btn" href="https://github.com/Alex16589/Traffic-Controller" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
+          </div>
+        </div>
+
+        <!-- 🧱 TEMPLATE — COPY BELOW FOR NEXT PROJECT -->
+        <!--
+        <div class="card">
+          <h3 style="margin:0">[Project Title]</h3>
+          <p style="color:var(--muted);margin-top:6px">[Short 1-2 line description about your project.]</p>
+          <div style="margin-top:8px" class="skills">
+            <div class="chip">Python</div><div class="chip">Flask</div><div class="chip">API</div>
+          </div>
+          <div style="margin-top:10px">
+            <a class="btn" href="[GitHub Repo Link]" style="background:transparent;border:2px solid var(--muted);color:var(--muted)">Code</a>
+          </div>
+        </div>
+        -->
+        <!-- END TEMPLATE -->
+
       </div>
     </section>
 
+    <!-- ===================== SKILLS SECTION ===================== -->
     <section id="skills" style="margin-top:20px">
       <h2 style="margin:0">Skills</h2>
       <div class="card" style="margin-top:10px">
@@ -131,6 +183,7 @@
       </div>
     </section>
 
+    <!-- ===================== CONTACT SECTION ===================== -->
     <section id="contact" style="margin-top:20px">
       <h2 style="margin:0">Contact</h2>
       <div class="card" style="margin-top:10px">
